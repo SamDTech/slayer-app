@@ -1,4 +1,7 @@
 package main
+import "github.com/samdtech/slayer-app/interaction"
+
+
 
 func main(){
 	startGame()
@@ -12,7 +15,9 @@ func main(){
 	endGame()
 }
 
-func startGame(){}
+func startGame(){
+	interaction.PrintGreeting()
+}
 
 func executeRounds() {}
 
