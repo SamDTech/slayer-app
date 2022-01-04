@@ -2,6 +2,8 @@ package main
 import "github.com/samdtech/slayer-app/interaction"
 
 
+var currentRound = 0
+
 
 func main(){
 	startGame()
@@ -19,6 +21,9 @@ func startGame(){
 	interaction.PrintGreeting()
 }
 
-func executeRounds() {}
+func executeRounds() {
+	currentRound++
+	isSpecialRound := currentRound % 3 == 0
+}
 
 func endGame() { }
