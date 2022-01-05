@@ -1,5 +1,10 @@
 package main
-import "github.com/samdtech/slayer-app/interaction"
+
+import (
+	"fmt"
+
+	"github.com/samdtech/slayer-app/interaction"
+)
 
 
 var currentRound = 0
@@ -24,6 +29,9 @@ func startGame(){
 func executeRounds() {
 	currentRound++
 	isSpecialRound := currentRound % 3 == 0
+
+	fmt.Print(isSpecialRound)
+
 }
 
 func endGame() { }

@@ -8,3 +8,8 @@ func PrintGreeting() {
 	fmt.Println("Good luck!")
 
 }
+
+func ShowAvailableActions(specialAttackIsAvailable bool){
+	fmt.Println("Please Choose your action")
+	fmt.Println("---------------------------------")
+}
