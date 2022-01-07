@@ -6,11 +6,9 @@ import (
 	"github.com/samdtech/slayer-app/interaction"
 )
 
-
 var currentRound = 0
 
-
-func main(){
+func main() {
 	startGame()
 
 	winner := ""
@@ -22,18 +20,22 @@ func main(){
 	endGame()
 }
 
-func startGame(){
+func startGame() {
 	interaction.PrintGreeting()
 }
 
 func executeRounds() {
 	currentRound++
-	isSpecialRound := currentRound % 3 == 0
+	isSpecialRound := currentRound%3 == 0
 
 	fmt.Print(isSpecialRound)
 
 	interaction.ShowAvailableActions(isSpecialRound)
 
+	userChoice := interaction.GetPlayerChoice(isSpecialRound)
+
+	fmt.Printf("The user picked %v", userChoice)
+
 }
 
-func endGame() { }
+func endGame() {}
