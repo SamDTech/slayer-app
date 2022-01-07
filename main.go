@@ -32,6 +32,8 @@ func executeRounds() {
 
 	fmt.Print(isSpecialRound)
 
+	interaction.ShowAvailableActions(isSpecialRound)
+
 }
 
 func endGame() { }

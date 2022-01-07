@@ -12,4 +12,10 @@ func PrintGreeting() {
 func ShowAvailableActions(specialAttackIsAvailable bool){
 	fmt.Println("Please Choose your action")
 	fmt.Println("---------------------------------")
+	fmt.Println("(1) Attack Monster")
+	fmt.Println("(2) Heal")
+
+	if specialAttackIsAvailable {
+		fmt.Println("(3) Special Attack")
+	}
 }
