@@ -5,8 +5,10 @@ import (
 	"time"
 )
 
+// generate rand source
 var randSource = rand.NewSource(time.Now().UnixNano())
 
+// generate random number
 var randGenerator = rand.New(randSource)
 
 func AttackMoster (isSpecialAttack bool){
