@@ -24,9 +24,9 @@ func startGame() {
 	interaction.PrintGreeting()
 }
 
-func executeRounds() {
+func executeRounds() string {
 	currentRound++
-	isSpecialRound := currentRound%3 == 0
+	isSpecialRound := currentRound % 3 == 0
 
 	fmt.Print(isSpecialRound)
 
@@ -34,7 +34,15 @@ func executeRounds() {
 
 	userChoice := interaction.GetPlayerChoice(isSpecialRound)
 
-	fmt.Printf("The user picked %v", userChoice)
+	if userChoice == "ATTACK" {
+
+	}else if userChoice == "HEAL"{
+
+	} else {
+
+	}
+
+	return ""
 
 }
 
